@@ -25,7 +25,7 @@ class _CatagoryBuilderState extends State<CatagoryBuilder> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 120.h,
+      height: 130.h,
       child: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('products').snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -51,6 +51,7 @@ class _CatagoryBuilderState extends State<CatagoryBuilder> {
               crossAxisCount: 1,
               crossAxisSpacing: 8.0,
               mainAxisSpacing: 8.0,
+              mainAxisExtent: 135,
             ),
             itemCount: products.length,
             itemBuilder: (context, index) {
@@ -69,7 +70,7 @@ class _CatagoryBuilderState extends State<CatagoryBuilder> {
                   margin: const EdgeInsets.only(right: 10),
                   height: 320,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(248, 247, 247, 1),
+                    color: const Color.fromRGBO(248, 247, 247, 1),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(

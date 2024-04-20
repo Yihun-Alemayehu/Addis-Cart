@@ -11,7 +11,7 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  final TextEditingController _controller =  TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   String _searchQuery = '';
   int searchResultSize = 0;
   @override
@@ -22,44 +22,83 @@ class _SearchScreenState extends State<SearchScreen> {
           padding: const EdgeInsets.only(top: 50, left: 20, right: 20),
           child: Column(
             children: [
-              TextField(
-                autofocus: true,
-                controller: _controller,
-                decoration: InputDecoration(
-                  hintText: 'Search for products',
-                  prefixIcon: const Icon(Icons.search),
-                  suffixIcon: _searchQuery.isEmpty
-                      ? IconButton(
-                          onPressed: () {},
-                          icon: const Padding(
-                            padding: EdgeInsets.only(right: 20),
-                            child: Icon(
-                              Icons.sort,
-                              size: 30,
+              Material(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                    side: BorderSide.none,
+                    borderRadius: BorderRadius.circular(17)),
+                child: TextField(
+                  autofocus: true,
+                  controller: _controller,
+                  decoration: InputDecoration(
+                    hintText: 'Search for products ...',
+                    hintStyle:
+                        const TextStyle(fontSize: 17, color: Colors.grey),
+                    suffixIcon: _searchQuery.isEmpty
+                        ? IconButton(
+                            onPressed: () {},
+                            icon: const Padding(
+                              padding: EdgeInsets.only(right: 20),
+                              child: Icon(
+                                Icons.tune_rounded,
+                                size: 30,
+                              ),
                             ),
-                          ),
-                        )
-                      : IconButton(
-                          onPressed: () {
-                            setState(() {
-                              _searchQuery = '';
-                              _controller.clear();
-                            });
-                          },
-                          icon: const Icon(
-                            Icons.cancel_outlined,
-                            size: 30,
-                          )),
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20)),
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20)),
+                          )
+                        : IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _searchQuery = '';
+                                _controller.clear();
+                              });
+                            },
+                            icon: const Icon(
+                              Icons.cancel_outlined,
+                              size: 30,
+                            )),
+                    fillColor: Colors.white60.withOpacity(0.08),
+                    filled: true,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(17),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                  // decoration: InputDecoration(
+                  //   hintText: 'Search for products',
+                  //   prefixIcon: const Icon(Icons.search),
+                  //   suffixIcon: _searchQuery.isEmpty
+                  //       ? IconButton(
+                  //           onPressed: () {},
+                  //           icon: const Padding(
+                  //             padding: EdgeInsets.only(right: 20),
+                  //             child: Icon(
+                  //               Icons.sort,
+                  //               size: 30,
+                  //             ),
+                  //           ),
+                  //         )
+                  //       : IconButton(
+                  //           onPressed: () {
+                  //             setState(() {
+                  //               _searchQuery = '';
+                  //               _controller.clear();
+                  //             });
+                  //           },
+                  //           icon: const Icon(
+                  //             Icons.cancel_outlined,
+                  //             size: 30,
+                  //           )),
+                  //   enabledBorder: OutlineInputBorder(
+                  //       borderRadius: BorderRadius.circular(20)),
+                  //   focusedBorder: OutlineInputBorder(
+                  //       borderRadius: BorderRadius.circular(20)),
+                  // ),
+                  onChanged: (query) {
+                    setState(() {
+                      _searchQuery = query;
+                    });
+                  },
                 ),
-                onChanged: (query) {
-                  setState(() {
-                    _searchQuery = query;
-                  });
-                },
               ),
               const SizedBox(
                 height: 20,
@@ -115,7 +154,8 @@ class _SearchScreenState extends State<SearchScreen> {
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
                         crossAxisSpacing: 8.0,
-                        mainAxisSpacing: 8.0,
+                        mainAxisSpacing: 4.0,
+                        mainAxisExtent: 210,
                       ),
                       itemCount: filteredProduct.length,
                       itemBuilder: (context, index) {
@@ -130,7 +170,8 @@ class _SearchScreenState extends State<SearchScreen> {
                               ),
                             );
                           },
-                          child: Card(
+                          child: Material(
+                            elevation: 3,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
                             child: Column(

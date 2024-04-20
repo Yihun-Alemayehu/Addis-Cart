@@ -47,6 +47,7 @@ class _DetailsPageState extends State<DetailsPage> {
         backgroundColor: Theme.of(context).colorScheme.background,
         body: SingleChildScrollView(
           child: Container(
+            padding: EdgeInsets.only(top: 20.h),
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,7 +57,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     width: double.infinity,
                     height: 340.h,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15)),
+                      borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(15), bottomRight: Radius.circular(15)),
                       image: DecorationImage(
                           image: NetworkImage(widget.product.imageUrl),
                           fit: BoxFit.cover),
@@ -85,7 +86,7 @@ class _DetailsPageState extends State<DetailsPage> {
                           shape: const CircleBorder(),
                           padding: const EdgeInsets.all(1),
                         ),
-                        child: const Icon(Icons.arrow_back),
+                        child: const Icon(Icons.arrow_back_ios),
                       ),
                     ),
                   ),
@@ -327,13 +328,13 @@ class Description extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100.h,
+      height: 80.h,
       child: SingleChildScrollView(
           child: Container(
         padding: EdgeInsets.only(left: 15.w),
         child: Text(
   
- "Proin iaculis felis quis tortor auctor, eu mollis felis ullamcorper. In nec diam semper, placerat enim sit amet, lacinia felis. Nulla nec lacus id velit dictum euismod. Integer dictum arcu nec nulla luctus, eget ultricies neque varius.",
+ "Designed for comfort and engineered for performance, these shoes are perfect for athletes and fashion enthusiasts alike. With innovative features such as responsive cushioning and breathable materials, you'll experience unmatched comfort and support with every step.",
 style: textStyle(12.sp, Theme.of(context).colorScheme.inversePrimary,
               FontWeight.normal, 1),
         ),

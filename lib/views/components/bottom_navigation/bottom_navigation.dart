@@ -15,7 +15,7 @@ class BottomNavigation extends StatelessWidget {
       builder: (context, bottomNavigationProvider, child) {
         return SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 35),
+            padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -24,6 +24,7 @@ class BottomNavigation extends StatelessWidget {
                     bottomNavigationProvider.pageIndex = 0;
                   },
                   icon: Ionicons.home,
+                  
                   color: bottomNavigationProvider.pageIndex == 0
                       ? const Color.fromRGBO(96, 85, 216, 1)
                       : Colors.grey,

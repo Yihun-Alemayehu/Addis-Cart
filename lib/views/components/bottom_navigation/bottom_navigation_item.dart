@@ -22,7 +22,7 @@ class BottomNavigationItem extends StatelessWidget {
         child: Icon(
           icon,
           color: color,
-          size: 35,
+          size: 28,
         ),
       ),
     );

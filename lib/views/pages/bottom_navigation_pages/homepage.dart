@@ -73,11 +73,11 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               SizedBox(
-                height: 20.h,
+                height: 10.h,
               ),
               const FirstSearchBar(),
               SizedBox(
-                height: 20.h,
+                height: 10.h,
               ),
               Column(
                 children: [
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                     controller: _controller,
                     count: 4,
                     effect: const JumpingDotEffect(
-                      activeDotColor: Colors.deepPurple,
+                      activeDotColor: Color(0xFF6055D8),
                       dotHeight: 12,
                       dotWidth: 12,
                       verticalOffset: 4,

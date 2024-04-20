@@ -72,8 +72,8 @@ class _CartPageState extends State<CartPage> {
             leading: const Padding(
               padding: EdgeInsets.all(8.0),
               child: Icon(
-                Icons.arrow_back,
-                size: 40,
+                Icons.arrow_back_ios,
+                size: 20,
               ),
             ),
             title: const Text(
@@ -89,7 +89,7 @@ class _CartPageState extends State<CartPage> {
                 padding: EdgeInsets.all(8.0),
                 child: Icon(
                   Icons.more_vert_rounded,
-                  size: 40,
+                  size: 30,
                 ),
               )
             ],
@@ -194,8 +194,9 @@ class _CartPageState extends State<CartPage> {
                                             },
                                             child: Icon(Icons.delete,
                                                 color: Colors.red.shade300,
-                                                size: 35),
+                                                size: 25),
                                           ),
+                                          const SizedBox(height: 20,),
                                           Row(
                                             children: [
                                               GestureDetector(

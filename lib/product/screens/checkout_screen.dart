@@ -58,13 +58,13 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
         return Scaffold(
           body: SafeArea(
               child: Padding(
-            padding: const EdgeInsets.only(top: 50, left: 20, right: 20),
+            padding: const EdgeInsets.only(top: 30, left: 10, right: 10),
             child: Column(
               children: [
                 Row(
                   children: [
                     IconButton(
-                      icon: const Icon(Icons.arrow_back),
+                      icon: const Icon(Icons.arrow_back_ios),
                       onPressed: () {
                         Navigator.pop(context);
                       },

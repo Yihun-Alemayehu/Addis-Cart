@@ -1,6 +1,4 @@
-import 'package:e_commerce_app/auth/bloc/auth_bloc.dart';
 import 'package:e_commerce_app/controllers/bottom_navigation_provider/bottom_navigation_provider.dart';
-import 'package:e_commerce_app/controllers/theme_provider/theme_provider.dart';
 import 'package:e_commerce_app/product/screens/search_screen.dart';
 import 'package:e_commerce_app/views/components/bottom_navigation/bottom_navigation.dart';
 import 'package:e_commerce_app/views/pages/bottom_navigation_pages/cart.dart';
