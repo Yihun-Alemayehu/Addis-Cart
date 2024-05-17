@@ -87,11 +87,29 @@ Once the app is up and running, you can explore its features:
 ## Screenshots
 
 <p align="center">
-  <img src="assets/screenshots/home_screen.png" alt="Home Screen" width="200" />
-  <img src="assets/screenshots/product_listing.png" alt="Product Listing" width="200" />
-  <img src="assets/screenshots/product_details.png" alt="Product Details" width="200" />
-  <img src="assets/screenshots/cart.png" alt="Shopping Cart" width="200" />
-  <img src="assets/screenshots/checkout.png" alt="Checkout" width="200" />
+  <img src="assets/screenshots/1.png" alt="Home Screen" width="200" />
+  <img src="assets/screenshots/2.png" alt="Product Listing" width="200" />
+  <img src="assets/screenshots/3.png" alt="Product Details" width="200" />
+  <img src="assets/screenshots/4" alt="Shopping Cart" width="200" />
+  <img src="assets/screenshots/5" alt="Checkout" width="200" />
+  <img src="assets/screenshots/6.png" alt="Home Screen" width="200" />
+  <img src="assets/screenshots/7.png" alt="Product Listing" width="200" />
+  <img src="assets/screenshots/8.png" alt="Product Details" width="200" />
+  <img src="assets/screenshots/9" alt="Shopping Cart" width="200" />
+  <img src="assets/screenshots/10" alt="Checkout" width="200" />
+  <img src="assets/screenshots/11.png" alt="Home Screen" width="200" />
+  <img src="assets/screenshots/12.png" alt="Product Listing" width="200" />
+  <img src="assets/screenshots/13.png" alt="Product Details" width="200" />
+  <img src="assets/screenshots/14" alt="Shopping Cart" width="200" />
+  <img src="assets/screenshots/15" alt="Checkout" width="200" />
+  <img src="assets/screenshots/16.png" alt="Home Screen" width="200" />
+  <img src="assets/screenshots/17.png" alt="Product Listing" width="200" />
+  <img src="assets/screenshots/18.png" alt="Product Details" width="200" />
+  <img src="assets/screenshots/19.png" alt="Shopping Cart" width="200" />
+  <img src="assets/screenshots/20.png" alt="Checkout" width="200" />
+  <img src="assets/screenshots/21.png" alt="Product Listing" width="200" />
+  <img src="assets/screenshots/22.png" alt="Product Details" width="200" />
+  <img src="assets/screenshots/23" alt="Shopping Cart" width="200" />
 </p>
 
 ## Roadmap
