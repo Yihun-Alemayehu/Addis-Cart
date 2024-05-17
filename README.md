@@ -94,7 +94,6 @@ Once the app is up and running, you can explore its features:
   <img src="assets/screenshots/8.png" alt="Product Details" width="200" />
   <img src="assets/screenshots/9.png" alt="Shopping Cart" width="200" />
   <img src="assets/screenshots/10.png" alt="Checkout" width="200" />
-  <img src="assets/screenshots/11.png" alt="Home Screen" width="200" />
   <img src="assets/screenshots/12.png" alt="Product Listing" width="200" />
   <img src="assets/screenshots/13.png" alt="Product Details" width="200" />
   <img src="assets/screenshots/14.png" alt="Shopping Cart" width="200" />
